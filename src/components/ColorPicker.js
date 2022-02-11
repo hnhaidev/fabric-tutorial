@@ -2,7 +2,7 @@ import { HexColorPicker, HexColorInput } from "react-colorful";
 import { useState } from "react";
 
 function ColorPicker() {
-  const [color, setColor] = useState("#aabbaa");
+  const [color, setColor] = useState("#000000");
 
   return (
     <div id="AppColorPicker">

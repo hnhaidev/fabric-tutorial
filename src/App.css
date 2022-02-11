@@ -25,18 +25,6 @@
   }
 }
 
-.App-header {
-  background-color: #5c5c5c;
-  height: 12vh;
-  width: 100vw;
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 #Header-text {
   font-family: "IBM Plex Mono", monospace;
   font-size: 5vh;
@@ -64,7 +52,7 @@ p {
   padding: 0 auto;
   width: 30vw;
   margin: 0;
-  background-color: #f5f5f5;
+  background-color: #eee;
 }
 
 #backgroundpick {
@@ -88,8 +76,8 @@ p {
   margin: 1vh;
   width: 16vh;
   background: transparent;
-  color: #2c4bff;
-  border: 1px solid #2c4bff;
+  color: #000;
+  border: 1px solid #000;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -99,7 +87,7 @@ p {
 
 .btn:hover,
 .btn:focus {
-  box-shadow: inset 0 0 0 3em #2c4bff;
+  box-shadow: inset 0 0 0 3em #000;
   color: #fff;
 }
 
@@ -176,7 +164,7 @@ p {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #2c4bff;
+  background-color: #000;
   color: #fff;
 }
 

@@ -1,19 +1,12 @@
 import { fabric } from "fabric";
-import React, { useState, useEffect } from "react";
-import logo from "../assets/logo.png";
+import React, { useEffect } from "react";
 import fg from "../assets/template.png";
 import { saveAs } from "file-saver";
-import { isCompositeComponent } from "react-dom/test-utils";
 
 function Canvas() {
-  // const base = <canvas id="mainCanvas"></canvas>;
-  // const baseimg = <img src="public/logo512.png" id="my-image"></img>;
-
-  const [canvas, setCanvas] = useState("");
-
   useEffect(() => {
-    setCanvas(initCanvas());
-  }, []);
+    initCanvas();
+  });
 
   const addNewText = (canvi) => {
     var addTextBtn = document.querySelector("#btn-addText");
@@ -85,7 +78,7 @@ function Canvas() {
       top: 530,
       width: 320,
       fontSize: 28,
-      fill: "#fff",
+      fill: "#000000",
       fontFamily: "Open Sans",
       fontWeight: 800,
       textAlign: "center",
@@ -101,7 +94,7 @@ function Canvas() {
     let colorPicker = document.querySelector("#colorPicker");
     let colorInput = document.querySelector("#colorPickerInput");
     let activeTextArr = [];
-    let val = "#ffffff";
+    let val = "#000000";
     colorPicker.onmousedown = () => {
       activeTextArr = canvi
         .getActiveObjects()
@@ -146,11 +139,11 @@ function Canvas() {
     const mainCanvas = new fabric.Canvas("mainCanvas", {
       height: 800,
       width: 800,
-      backgroundColor: "#ffede8",
+      backgroundColor: "#eee",
       preserveObjectStacking: true,
       controlsAboveOverlay: true,
     });
-    addImageAndClip(mainCanvas, logo);
+    addImageAndClip(mainCanvas);
     addNewText(mainCanvas);
     downloadImage(mainCanvas);
     pickBg(mainCanvas);
@@ -162,7 +155,7 @@ function Canvas() {
   return (
     <div className="App-Canvas">
       <canvas id="mainCanvas" />
-      <img className="gui" src={fg}></img>
+      <img className="gui" src={fg} />
     </div>
   );
 }

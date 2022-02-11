@@ -51,7 +51,7 @@ function Config(props) {
   return (
     <div className="App-Config">
       <div id="config-wrapper">
-        <p className="Upload-text">Upload the image</p>
+        <p className="Upload-text">Create a photo</p>
         <input id="backgroundpick" type="file" name="" />
         <div id="picker" className="control-items">
           <ConfigBtn
@@ -65,7 +65,6 @@ function Config(props) {
         </div>
         <Fonts />
         <br />
-        {/* <CheckLogo /> */}
         <ColorPicker colorState={props.colorState} />
         <br />
         <ConfigBtn icon="download" id="btn-save" text=" SAVE" />
