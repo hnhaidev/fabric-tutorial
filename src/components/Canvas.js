@@ -155,7 +155,7 @@ function Canvas() {
   return (
     <div className="App-Canvas">
       <canvas id="mainCanvas" />
-      <img className="gui" src={fg} />
+      <img className="gui" src={fg} alt="gui" />
     </div>
   );
 }

@@ -37,16 +37,6 @@ function Fonts() {
   );
 }
 
-function CheckLogo() {
-  return (
-    <label class="container">
-      Logo
-      <input type="checkbox" checked="checked" />
-      <span class="checkmark"></span>
-    </label>
-  );
-}
-
 function Config(props) {
   return (
     <div className="App-Config">
